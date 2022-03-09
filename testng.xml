@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="platformName" value="Android"></parameter>
+<parameter name="deviceName" value="75b45bd0"></parameter>
+<parameter name="platformVersion" value="10"></parameter>
+<parameter name="appPackage" value="com.clarocolombia.miclaro.debug"></parameter>
+<parameter name="appActivity" value="com.clarocolombia.miclaro.activities.Splash"></parameter>
+<parameter name="noReset" value="true"></parameter>
+<parameter name="autoGrantPermissions" value="true"></parameter>
+
+<parameter name="rutaOutput" value="./output/"></parameter>
+<parameter name="rutaImagenReporte" value="./imagenes/logo_periferia.png"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="semilleros.RunPrueba"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
